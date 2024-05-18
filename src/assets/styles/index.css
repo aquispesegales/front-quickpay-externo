@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {display: none;}
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.mi-sweet-alert {
+    border-radius: 65px;
+    min-height: 256px;
+    width: 830px;
+}
+
+.title-sweet-alert{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sweet-alert-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sweet-alert-confirm{
+    border-radius: 65px !important;
+    padding: 20px 88px;
+    font-size: 24px !important;
+}
+.sweet-alert-cancel {
+    border-radius: 65px !important;
+    padding: 20px 190px;
+    font-size: 24px !important;
+}
+
+.sweet-alert-validation-message{
+    background-color: transparent;
+    color: #f27474;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.loading-indicator {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #13316c;
+  }
+
+
+
+@media only screen and (max-width: 500px) {
+    .title-sweet-alert{
+        font-size: 18px;
+    }
+    
+    .sweet-alert-confirm{
+        padding: 20px 40px;
+        font-size: 18px !important;
+    }
+
+    .sweet-alert-cancel{
+        padding: 20px 110px;
+        font-size: 18px !important;
+    }
+
+    .sweet-alert-validation-message{
+        font-size: 15px;
+        padding: 0px 15px;
+    }
+}
