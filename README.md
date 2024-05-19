@@ -51,3 +51,6 @@ bun run build
 ### Customize configuration
 
 See [Configuration Reference](https://vitejs.dev/config/).
+
+
+cambiar este compoente para QAS HeaderComponent

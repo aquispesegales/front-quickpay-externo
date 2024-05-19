@@ -1,68 +1,34 @@
 <template>
   <section class="header w-full">
-    <div
-      class="flex items-center max-w-[1300px] justify-between mx-auto h-full gap-10 px-6"
-    >
+
+
+
+    <div class="flex items-center max-w-[1300px] justify-between mx-auto h-full gap-10 px-6">
+          <!-- solo para qas-->
+    <img src="@/assets/sitio/no_valid.jpg" alt="no valido" width="200" height="50">
+    <!-- =============== -->
       <div class="logo flex items-center">
-      <a href="/#">
-        <img class="LogoImagen" src="./../../assets/sitio/QuickPayLogo1.png" />
+        <a href="/#">
+          <img class="LogoImagen" src="./../../assets/sitio/QuickPayLogo1.png" />
         </a>
       </div>
-      <div
-        class="nav-menu flex items-center xl:gap-24 lg:gap-16 md:gap-6 text-[16px] md:text-[23px]"
-      >
-        <a
-          href="/#seccion-quienes-somos"
-          class="quienes-somos-text"
-          >Quiénes somos</a
-        >
-        <a
-          href="/#seccion-entidades"
-          class="entidades-text"
-          >Entidades</a
-        >
-        <a
-          href="/#seccion-contactos"
-          class="contactos-text"
-          >Contáctanos</a
-        >
+      <div class="nav-menu flex items-center xl:gap-24 lg:gap-16 md:gap-6 text-[16px] md:text-[23px]">
+        <a href="/#seccion-quienes-somos" class="quienes-somos-text">Quiénes somos</a>
+        <a href="/#seccion-entidades" class="entidades-text">Entidades</a>
+        <a href="/#seccion-contactos" class="contactos-text">Contáctanos</a>
         <button class="registrate-button hidden">Regístrate</button>
       </div>
       <button @click="toggleMenu" class="menu-icon">
-        <svg
-          class="w-10 h-10"
-          fill="none"
-          stroke="#13316c"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
+        <svg class="w-10 h-10" fill="none" stroke="#13316c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
-      <div
-        v-show="showMenu"
-        class="absolute top-[111px] right-0 bg-white w-1/2 h-[400px] z-10 rounded-bl-xl"
-      >
+      <div v-show="showMenu" class="absolute top-[111px] right-0 bg-white w-1/2 h-[400px] z-10 rounded-bl-xl">
         <div
-          class="flex flex-col text-[#13316c] font-bold items-center justify-center font-poppins text-[16px] sm:text-2xl gap-6 h-full"
-        >
-          <a
-            href="/#seccion-quienes-somos"
-            @click="closeMenu"
-            class="py-3"
-            >Quiénes somos</a
-          >
-          <a href="/#seccion-entidades" @click="closeMenu" class="py-2"
-            >Entidades</a
-          >
-          <a href="/#seccion-contactos" @click="closeMenu" class="py-2"
-            >Contáctanos</a
-          >
+          class="flex flex-col text-[#13316c] font-bold items-center justify-center font-poppins text-[16px] sm:text-2xl gap-6 h-full">
+          <a href="/#seccion-quienes-somos" @click="closeMenu" class="py-3">Quiénes somos</a>
+          <a href="/#seccion-entidades" @click="closeMenu" class="py-2">Entidades</a>
+          <a href="/#seccion-contactos" @click="closeMenu" class="py-2">Contáctanos</a>
           <button class="registrate-button py-2 hidden">Regístrate</button>
         </div>
       </div>
@@ -107,9 +73,11 @@ a {
   gap: 10px;
   height: 111px;
 }
-.hidden{
-display:none !important;
+
+.hidden {
+  display: none !important;
 }
+
 .logo {
   flex-shrink: 0;
   height: 104px;
@@ -177,6 +145,7 @@ display:none !important;
   .menu-icon {
     display: block;
   }
+
   .nav-menu {
     display: none;
   }

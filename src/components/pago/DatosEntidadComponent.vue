@@ -1,24 +1,28 @@
 <template>
-      <div class="club-the-strongest font-poppins flex-col md:flex-row md:h-[210px] gap-8 py-4 md:gap-14">
-          <div class="contenedor-club text-[18px] md:text-[23px]">
-              <p class="titulo-club md:">{{ entidadStore.objEntidad?.nombre }}</p>
-              <img class="logo-club" :src="entidadStore.objEntidad?.imagen64" />
-          </div>
-          <div class=" grid grid-cols-[1fr_2fr] max-w-[400px] gap-4 text-[16px] md:text-[20px]">
-            <p class="font-semibold text-[#13316c]">TELÉFONO</p>
+  <div class="club-the-strongest font-poppins flex-col md:flex-row md:h-[210px] gap-8 py-4 md:gap-14">
+ 
+    <div class="contenedor-club text-[18px] md:text-[23px]">
+      <p class="titulo-club md:">{{ entidadStore.objEntidad?.nombre }}</p>
+      <img class="logo-club" :src="entidadStore.objEntidad?.imagen64" />
+    </div>
+    <div class=" grid grid-cols-[1fr_2fr] max-w-[400px] gap-4 text-[16px] md:text-[20px]">
+      <p class="font-semibold text-[#13316c]">TELÉFONO</p>
 
-            <p class="w-full md:whitespace-nowrap  overflow-hidden  text-ellipsis whitespace-normal">{{   entidadStore.objEntidad?.telefono}}</p>
+      <p class="w-full md:whitespace-nowrap  overflow-hidden  text-ellipsis whitespace-normal">{{
+        entidadStore.objEntidad?.telefono }}</p>
 
-            <p class="font-semibold text-[#13316c]">DIRECCIÓN</p>
+      <p class="font-semibold text-[#13316c]">DIRECCIÓN</p>
 
-            <p class="w-full md:whitespace-nowrap  overflow-hidden  text-ellipsis whitespace-normal">{{   entidadStore.objEntidad?.direccion}}</p>
+      <p class="w-full md:whitespace-nowrap  overflow-hidden  text-ellipsis whitespace-normal">{{
+        entidadStore.objEntidad?.direccion }}</p>
 
-            <p class="font-semibold text-[#13316c]">NIT</p>
+      <p class="font-semibold text-[#13316c]">NIT</p>
 
-            <p class="w-full md:whitespace-nowrap  overflow-hidden  text-ellipsis whitespace-normal">{{   entidadStore.objEntidad?.nit }}</p>
+      <p class="w-full md:whitespace-nowrap  overflow-hidden  text-ellipsis whitespace-normal">{{
+        entidadStore.objEntidad?.nit }}</p>
 
-          </div>
-      </div>
+    </div>
+  </div>
 </template>
 <script setup lang="ts">
 import { onMounted } from 'vue';
@@ -35,11 +39,9 @@ onMounted(async () => {
 </script>
 <style scoped>
 .steps {
-  background: linear-gradient(
-    180deg,
-    rgba(221, 233, 241, 0.7) 0%,
-    rgba(245, 241, 230, 0.7) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(221, 233, 241, 0.7) 0%,
+      rgba(245, 241, 230, 0.7) 100%);
   padding: 40px 58px 40px 58px;
   display: flex;
   flex-direction: row;
@@ -53,6 +55,7 @@ onMounted(async () => {
   position: relative;
   overflow: hidden;
 }
+
 .club-the-strongest {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 40px;
@@ -67,6 +70,7 @@ onMounted(async () => {
   box-shadow: 0px 13px 15.5px -3px rgba(153, 177, 194, 1);
   /* overflow: hidden; */
 }
+
 .contenedor-club {
   display: flex;
   flex-direction: column;
@@ -78,12 +82,14 @@ onMounted(async () => {
   position: relative;
   overflow: hidden;
 }
+
 .titulo-club {
   color: #13316c;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
+
 .logo-club {
   flex-shrink: 0;
   width: 100px;
@@ -91,6 +97,7 @@ onMounted(async () => {
   position: relative;
   object-fit: cover;
 }
+
 .datos-club {
   padding: 39px 0px 39px 0px;
   display: flex;
@@ -127,21 +134,25 @@ onMounted(async () => {
   position: relative;
   overflow: hidden;
 }
+
 .tel-span {
   color: #1f4680;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
 .tel-span2 {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
 .tel-span3 {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
+
 .direccion-club {
   display: flex;
   flex-direction: row;
@@ -162,11 +173,13 @@ onMounted(async () => {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
 .direccion2 {
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
+
 .nit-club {
   display: flex;
   flex-direction: row;
@@ -180,13 +193,14 @@ onMounted(async () => {
 }
 
 .nit-1 {
-    text-align: left;
+  text-align: left;
   color: #1f4680;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
 .nit-2 {
-    text-align: left;
+  text-align: left;
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
