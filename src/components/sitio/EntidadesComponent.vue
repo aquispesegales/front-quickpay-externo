@@ -9,7 +9,8 @@
         <div class="botones-entidades flex flex-col sm:grid sm:grid-cols-2 gap-y-10 lg:gap-x-20 md:gap-x-10 sm:gap-x-20">
           <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" v-for="tipoEmpresa in tipoEmpresas.lstTipoEmpresas"
             @click="irEntidades(tipoEmpresa.dominioId)">
-            <img class="w-20 h-20" :src="tipoEmpresa.icono" alt="Icono de Empresa" />
+            {{ tipoEmpresa.icono }}
+            <img class="w-20 h-20" :src="'../../assets/iconos/universidades.svg'" alt="Icono de Empresa" />
             <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">{{ tipoEmpresa.descripcion }}</p>
           </div>
         </div>
