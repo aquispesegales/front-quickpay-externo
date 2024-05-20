@@ -1,12 +1,9 @@
 <template>
   <section class="header w-full">
-
-
-
     <div class="flex items-center max-w-[1300px] justify-between mx-auto h-full gap-10 px-6">
-          <!-- solo para qas-->
-    <img src="@/assets/sitio/no_valid.jpg" alt="no valido" width="200" height="50">
-    <!-- =============== -->
+      <!-- solo para qas-->
+      <img src="./../../assets/sitio/no_valid.jpg" alt="no valido" width="200" height="50">
+      <!-- =============== -->
       <div class="logo flex items-center">
         <a href="/#">
           <img class="LogoImagen" src="./../../assets/sitio/QuickPayLogo1.png" />
@@ -36,8 +33,27 @@
   </section>
 </template>
 
-<script>
-export default {
+<script setup lang="ts">
+import { ref,onMounted } from 'vue';
+
+const showMenu = ref(false);
+const toggleMenu = () =>{
+  showMenu.value = !showMenu.value;
+}
+const closeMenu = () =>{
+  showMenu.value = false;
+}
+onMounted(() => {
+   // Detecta el evento de clic en cualquier parte del documento y cierra el menú si está abierto
+   /*document.addEventListener("click", (event) => {
+      const targetElement = event.target;
+      if (!targetElement.closest(".header") && this.showMenu) {
+        closeMenu();
+      }
+    });*/
+})
+
+/*export default {
   data() {
     return {
       showMenu: false,
@@ -60,7 +76,8 @@ export default {
       }
     });
   },
-};
+};*/
+
 </script>
 
 <style scoped>

@@ -18,7 +18,7 @@
   </section>
 </template>
 <script setup lang="ts">
-import image from '@/assets/sitio/EntidadesImageOld.png'
+import image from '../../assets/sitio/EntidadesImageOld.png'
 import { useRouter } from 'vue-router';
 import { useTipoEmpresas } from '../../composable/tipoEmpresas'
 const tipoEmpresas = useTipoEmpresas();
