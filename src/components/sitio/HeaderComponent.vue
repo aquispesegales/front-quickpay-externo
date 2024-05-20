@@ -2,7 +2,7 @@
   <section class="header w-full">
     <div class="flex items-center max-w-[1300px] justify-between mx-auto h-full gap-10 px-6">
       <!-- solo para qas-->
-      <!--<img src="./../../assets/sitio/no_valid.jpg" alt="no valido" width="200" height="50">-->
+      <img src="./../../assets/sitio/no_valid.jpg" alt="no valido" width="200" height="50">
       <!-- =============== -->
       <div class="logo flex items-center">
         <a href="/#">
