@@ -7,10 +7,36 @@
           <img class="entidades-image-1" :src="image" />
         </div>
         <div class="botones-entidades flex flex-col sm:grid sm:grid-cols-2 gap-y-10 lg:gap-x-20 md:gap-x-10 sm:gap-x-20">
-          <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" v-for="tipoEmpresa in tipoEmpresas.lstTipoEmpresas"
-            @click="irEntidades(tipoEmpresa.dominioId)">
-            <img class="w-20 h-20" :src="'/assets/'+tipoEmpresa.icono" alt="Icono de Empresa" />
-            <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">{{ tipoEmpresa.descripcion }}</p>
+
+          <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" 
+            @click="irEntidades(4)">
+            <img class="w-20 h-20" src="../../assets/iconos/universidades.svg" alt="Icono de Empresa" />
+            <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">UNIVERSIDADES</p>
+          </div>
+          <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" 
+            @click="irEntidades(84)">
+            <img class="w-20 h-20" src="../../assets/iconos/clubes.svg" alt="Icono de Empresa" />
+            <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">CLUBES</p>
+          </div>
+          <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" 
+            @click="irEntidades(85)">
+            <img class="w-20 h-20" src="../../assets/iconos/eventos.svg" alt="Icono de Empresa" />
+            <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">EVENTOS</p>
+          </div>
+          <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" 
+            @click="irEntidades(86)">
+            <img class="w-20 h-20" src="../../assets/iconos/seguros.svg" alt="Icono de Empresa" />
+            <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">SEGUROS</p>
+          </div>
+          <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" 
+            @click="irEntidades(87)">
+            <img class="w-20 h-20" src="../../assets/iconos/servicios.svg" alt="Icono de Empresa" />
+            <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">SERVICIOS</p>
+          </div>
+          <div class="universidades lg:w-[250px]  md:w-[200px] cursor-pointer hover:opacity-80 p-4" 
+            @click="irEntidades(31)">
+            <img class="w-20 h-20" src="../../assets/iconos/colegios.svg" alt="Icono de Empresa" />
+            <p class="universidades-text text-[28px] md:text-[20px] lg:text-[28px] ">COLEGIOS</p>
           </div>
         </div>
       </div>

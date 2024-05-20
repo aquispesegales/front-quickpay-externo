@@ -39,7 +39,7 @@ export function useTipoEmpresas() {
     {
       dominioId: 31,
       descripcion: 'COLEGIOS',
-      icono: 'iconos/colegios.svg'
+      icono: 'colegios.svg'
     }
   ]);
   return { lstTipoEmpresas }
