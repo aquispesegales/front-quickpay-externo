@@ -10,36 +10,36 @@ export function useTipoEmpresas() {
     {
       dominioId: 4,
       descripcion: 'UNIVERSIDADES',
-      icono: '/src/assets/iconos/universidades.svg'
+      icono: '/assets/universidades.svg'
     },
     {
       dominioId: 84,
       descripcion: 'CLUBES',
-      icono: '/src/assets/iconos/clubes.svg'
+      icono: '/src/assets/clubes.svg'
     }
     ,
     {
       dominioId: 85,
       descripcion: 'EVENTOS',
-      icono: '/src/assets/iconos/eventos.svg'
+      icono: '/assets/eventos.svg'
     }
     ,
     {
       dominioId: 86,
       descripcion: 'SEGUROS',
-      icono: '/src/assets/iconos/seguros.svg'
+      icono: '/assets/seguros.svg'
     }
     ,
     {
       dominioId: 87,
       descripcion: 'SERVICIOS',
-      icono: '/src/assets/iconos/servicios.svg'
+      icono: '/assets/servicios.svg'
     }
     ,
     {
       dominioId: 31,
       descripcion: 'COLEGIOS',
-      icono: '/src/assets/iconos/colegios.svg'
+      icono: '/assets/colegios.svg'
     }
   ]);
   return { lstTipoEmpresas }
