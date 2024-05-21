@@ -25,3 +25,6 @@ pnpm-debug.log*
 otros.txt
 *.development
 *.production
+
+/dist_prd
+/dist_qas
