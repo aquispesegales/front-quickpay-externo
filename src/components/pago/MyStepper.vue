@@ -1,5 +1,6 @@
 <template>
   <div class="flex items-center w-full ">
+    
     <SingleStep
       v-for="(step, index) in steps"
       :key="index"
